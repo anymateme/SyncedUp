@@ -1,0 +1,20 @@
+[pipeline]
+processes = ['faceswap' , 'lipsync' , 'superres']
+
+
+[faceswap]
+repo_name = 'roop'
+input_path = ['data/faceswap/input/input.mp4', 'data/faceswap/input/input.jpeg']
+output_path = 'data/faceswap/input/faceswap_op.mp4'
+
+
+[lipsync]
+repo_name = 'wav2lip'
+input_path =['data/faceswap/input/faceswap_op.mp4']
+output_path = ['data/lipsync/input/lipsync_op.mp4']
+
+
+[superres]
+repo_name = 'gpfgan'
+input_path = ['data/faceswap/input/lipsync_op.mp4']
+output_path = ['data/superres/input/superres_op.mp4']
