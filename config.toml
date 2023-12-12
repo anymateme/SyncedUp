@@ -3,8 +3,12 @@ processes = ['faceswap' , 'lipsync' , 'superres']
 
 
 [faceswap]
+# roop
 repo_name = 'roop'
-input_path = ['data/faceswap/input/input.mp4', 'data/faceswap/input/input.jpeg']
+input_path = [
+              'data/faceswap/input/input.mp4',                # input video Julia
+              'data/faceswap/input/input.jpeg'                # input face swap image
+             ]
 output_path = 'data/faceswap/input/faceswap_op.mp4'
 
 
