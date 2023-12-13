@@ -3,8 +3,8 @@
 	url = https://github.com/s0md3v/roop.git
 
 
-[submodule "src/faceswap/wav2lip"]
-	path = src/faceswap/wav2lip
+[submodule "src/lipsync/wav2lip"]
+	path = src/lipsync/wav2lip
 	url = https://github.com/Rudrabha/Wav2Lip.git
 
 [submodule "src/superres/GFPGAN"]	
