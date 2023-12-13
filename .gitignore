@@ -3,3 +3,4 @@ models/
 gfpgan/
 experiments/
 temp/
+env/

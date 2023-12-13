@@ -1,9 +1,9 @@
 [pipeline]
-# processes = ['faceswap' , 'lipsync' , 'superres']
+processes = ['faceswap' , 'lipsync' , 'superres']
 
 # processes = ['lipsync' , 'superres']
 
-processes = ['superres']
+# processes = ['superres']
 
 [faceswap]
 # roop
@@ -17,11 +17,12 @@ output_path = 'data/faceswap/output/faceswap_op.mp4'
 
 [lipsync]
 repo_name = 'wav2lip'
-input_path =['/home/cilab/teja/SyncedUp/data/faceswap/output/faceswap_op.mp4', '/home/cilab/teja/SyncedUp/data/lipsync/input/input.wav']
+input_path =['data/faceswap/output/faceswap_op.mp4', 
+            '/home/cilab/teja/demo/SyncedUp/sample_data/lipsync/input/input.wav']
 output_path = 'data/lipsync/output/lipsync_op.mp4'
 
 
 [superres]
 repo_name = 'gfpgan'
-input_path = '/home/cilab/teja/SyncedUp/data/lipsync/output/lipsync_op.mp4'
+input_path = 'data/lipsync/output/lipsync_op.mp4'
 output_path = 'data/superres/output'
