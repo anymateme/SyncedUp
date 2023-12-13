@@ -1,6 +1,8 @@
 from logzero import logger
 import toml
 from src.faceswap.faceswap_main import faceswap
+from src.lipsync.lipsync_main import lipsync
+from src.superres.superres_main import superres
 class SyncedUp:
     def __init__(self, configs):
         self.configs = configs
@@ -25,10 +27,12 @@ class SyncedUp:
 
     def lipsync(self):
         logger.debug("Running lipsync")
+        lipsync(self.configs).run()
         pass
 
     def superres(self):
         logger.debug("Running superres")
+        superres(self.configs).run()
         pass
 
 
