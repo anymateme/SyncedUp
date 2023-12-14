@@ -55,5 +55,5 @@ class superres:
         os.system(cmd)
 
         # add the audio to the video
-        # cmd = f'ffmpeg -i {vid_path} -i {os.path.join(output_path, "output.mp4")} -c copy -map 0:v:0 -map 1:a:0 {os.path.join(output_path, "output_with_audio.mp4")}'
-        # os.system(cmd)
+        cmd = f'ffmpeg -i {vid_path} -i {os.path.join(output_path, "output.mp4")} -c copy -map 0:v:0 -map 1:a:0 {os.path.join(output_path, "output_with_audio.mp4")}'
+        os.system(cmd)
