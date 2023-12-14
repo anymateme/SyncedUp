@@ -34,7 +34,7 @@ class superres:
         os.makedirs(os.path.join(vid_dir, 'images'), exist_ok=True)
 
         # extract frames from the video
-        cmd = f'ffmpeg -i {vid_path} -r 1 {os.path.join(vid_dir, "images")}/%05d.png'
+        cmd = f'ffmpeg -i {vid_path} {os.path.join(vid_dir, "images")}/%05d.png'
         os.system(cmd)
 
 
