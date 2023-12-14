@@ -4,7 +4,4 @@ gfpgan/
 experiments/
 temp/
 env/
-src/faceswap/roop/
-src/lipsync/Wav2Lip/
-src/superres/GFPGAN/
 *.pyc
