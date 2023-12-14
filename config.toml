@@ -18,7 +18,7 @@ output_path = 'sample_data/faceswap/output/faceswap_op.mp4'
 [lipsync]
 repo_name = 'wav2lip'
 input_path =['sample_data/faceswap/output/faceswap_op.mp4', 
-            'sample_data/lipsync/input/input.wav']
+            'sample_data/lipsync/input/input.wav']                   # input audio
 output_path = 'sample_data/lipsync/output/lipsync_op.mp4'
 
 
