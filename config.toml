@@ -1,10 +1,6 @@
 [pipeline]
 processes = ['faceswap' , 'lipsync' , 'superres']
 
-# processes = ['lipsync' , 'superres']
-
-# processes = ['superres']
-
 [faceswap]
 # roop
 repo_name = 'roop'
