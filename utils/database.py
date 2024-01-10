@@ -39,15 +39,27 @@ class DrivingHead:
 
 if __name__ == '__main__':
     dh = DrivingHead()
-    urls = dh.male_driving_vids()
-    output_path = 'data/male_driving_head/'
+    # urls = dh.male_driving_vids()
+    # output_path = 'data/male_driving_head/'
+    # os.makedirs(output_path, exist_ok=True)
+    # for no,url in enumerate(urls):
+    #     dh.download(url, os.path.join(output_path, str(no) + '.mp4'))
+
+
+    # urls = dh.female_driving_vids()
+    # output_path = 'data/female_driving_head/'
+    # os.makedirs(output_path, exist_ok=True)
+    # for no,url in enumerate(urls):
+    #     dh.download(url, os.path.join(output_path, str(no) + '.mp4'))
+
+    urls = dh.julia_hair_back()
+    output_path = 'data/julia_hair_back/'
     os.makedirs(output_path, exist_ok=True)
     for no,url in enumerate(urls):
         dh.download(url, os.path.join(output_path, str(no) + '.mp4'))
 
 
-    urls = dh.female_driving_vids()
-    output_path = 'data/female_driving_head/'
+    urls = dh.julia_driving_heads()[0]
+    output_path = 'data/julia_driving_heads/'
     os.makedirs(output_path, exist_ok=True)
-    for no,url in enumerate(urls):
-        dh.download(url, os.path.join(output_path, str(no) + '.mp4'))
+    dh.download(urls, os.path.join(output_path, '0.mp4'))

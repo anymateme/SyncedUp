@@ -1,5 +1,6 @@
 [pipeline]
-processes = ['faceswap' , 'lipsync' , 'superres']
+# processes = ['faceswap' , 'lipsync' , 'superres']
+processes = [ 'headmotion']
 
 [faceswap]
 # roop
@@ -22,3 +23,10 @@ output_path = 'sample_data/lipsync/output/lipsync_op.mp4'
 repo_name = 'gfpgan'
 input_path = 'sample_data/lipsync/output/lipsync_op.mp4'
 output_path = 'sample_data/superres/output'
+
+
+[headmotion]
+repo_name = 'thinspline'
+input_path = ['sample_data/headmotion/input/julia_tied_hair.png',
+                'sample_data/headmotion/input/head_poses.mp4']
+output_path = 'sample_data/headmotion/output'

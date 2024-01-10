@@ -3,6 +3,7 @@ import toml
 from src.faceswap.faceswap_main import faceswap
 from src.lipsync.lipsync_main import lipsync
 from src.superres.superres_main import superres
+from src.headmotion.headmotion_main import HeadMotion
 class SyncedUp:
     def __init__(self, configs):
         self.configs = configs
@@ -33,6 +34,11 @@ class SyncedUp:
     def superres(self):
         logger.debug("Running superres")
         superres(self.configs).run()
+        pass
+
+    def headmotion(self):
+        logger.debug("Running headmotion")
+        HeadMotion(self.configs).run()
         pass
 
 
