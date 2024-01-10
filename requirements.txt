@@ -45,6 +45,7 @@ humanize==4.9.0
 hyperlink==21.0.0
 idna==3.6
 imageio==2.33.0
+imageio-ffmpeg==0.4.9
 importlib-metadata==7.0.0
 importlib-resources==6.1.1
 incremental==22.10.0
@@ -143,6 +144,7 @@ typing_extensions==4.5.0
 urllib3==2.1.0
 wcwidth==0.2.12
 Werkzeug==3.0.1
+wldhx.yadisk-direct==0.0.6
 wrapt==1.16.0
 yapf==0.40.2
 youtube-dl==2021.12.17
