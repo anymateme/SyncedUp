@@ -3,3 +3,5 @@ gfpgan/
 experiments/
 env/
 *.pyc
+vids/
+env2/

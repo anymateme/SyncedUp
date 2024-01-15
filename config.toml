@@ -27,6 +27,6 @@ output_path = 'sample_data/superres/output'
 
 [headmotion]
 repo_name = 'thinspline'
-input_path = ['sample_data/headmotion/input/julia_tied_hair.png',
-                'sample_data/headmotion/input/head_poses.mp4']
+input_path = ['/home/cilab/teja/demo_experiments/SyncedUp/vids/target_cropped/1335.png',
+                '/home/cilab/teja/demo_experiments/SyncedUp/sample_data/headmotion/input/head_poses.mp4']
 output_path = 'sample_data/headmotion/output'
